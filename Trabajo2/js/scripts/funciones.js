@@ -9,3 +9,15 @@ function hola(){
 function chau(){
     console.log('Chau');
 }
+
+function mouse(){
+    alert('Pasaste por aca');
+}
+
+function cambiar(){
+    document.getElementById('A1').style.color='red';
+}
+
+function cambio2(){
+    document.getElementById('A1').style.color='black';
+}
