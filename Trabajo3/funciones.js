@@ -9,14 +9,14 @@ function sumar2(){
     let numero2 = document.getElementById('B').value;
     let resultado2 = Number(numero1)+Number(numero2);
     
-    //console.log(resultado2);
+    /*console.log(resultado2);
 
-    //if (numero1 > numero2){
-    //    alert(numero1 + ' es mayor que '+ numero2)
-    //}
-    //else{
-    //    alert(numero2 + ' es mayor que ' + numero1);
-    //}
+    if (numero1 > numero2){
+        alert(numero1 + ' es mayor que '+ numero2)
+    }
+    else{
+        alert(numero2 + ' es mayor que ' + numero1);
+    }*/
 
     document.getElementById('D').innerHTML=resultado2;
 }
