@@ -39,12 +39,17 @@ const PERSONA3 = {
 }
 
 const MOSTRARPERSONA = {
-    PERSONA1,
-    PERSONA2,
-    PERSONA3,
     mayor: function(){
-        if (PERSONA1.edad, PERSONA2.edad, PERSONA3.edad) > 18 {
-            
+        console.log('Personas mayores de 18 años:');
+        if (PERSONA1.edad > 18) {
+            console.log(PERSONA1.NombreCompleto());
+        }
+        if (PERSONA2.edad > 18){
+            console.log(PERSONA2.NombreCompleto());
+        }
+        if (PERSONA3.edad > 18) {
+            console.log(PERSONA3.NombreCompleto());
         }
     }
 }
+console.log(MOSTRARPERSONA.mayor());
