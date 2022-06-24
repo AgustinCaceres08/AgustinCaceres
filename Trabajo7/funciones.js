@@ -20,6 +20,6 @@ function mostrar(){
         document.getElementById('B').innerText=data.results[0].name.last;
         document.getElementById('C').innerText=data.results[0].gender;
         document.getElementById('D').innerText=data.results[0].email;
-        document.getElementById('E').innerText=data.results[0].picture.large;
+        document.getElementById('E').innerHTML=data.results[0].picture.large;
     })
 }
