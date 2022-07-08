@@ -75,7 +75,7 @@ function buscar() {
             }else{
                 if (resultado.editorial == "La flor") {
                     let importe2 = resultado.valor * (5/100) // Si es la flor le agrego el 5%
-                    total_valor = total_valor - importe2
+                    total_valor = resultado.valor - importe2
                 }else{
                     total_valor = resultado.valor;
                 }
@@ -93,7 +93,7 @@ function buscar() {
             }else{
                 if (resultado.editorial == "La flor") {
                     let importe2 = resultado.valor * (5/100) // Si es la flor le agrego el 5%
-                    total_valor = total_valor - importe2
+                    total_valor = resultado.valor - importe2
                 }else{
                     total_valor = resultado.valor;
                 }

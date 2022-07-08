@@ -43,6 +43,7 @@ let socios = [SOCIO1,SOCIO2,SOCIO3,SOCIO4,SOCIO5];
 function enviar() {
     let dni = document.getElementById("dni").value
     let resultado
+    let color
 
     socios.forEach(element => {
         if (element.dni == dni) {
@@ -55,18 +56,18 @@ function enviar() {
         document.getElementById("div").innerHTML = "No existe";
     }else{
         if(resultado.facturas<=3){
-            document.getElementById("div").style.background = "green"
-            document.getElementById("div").innerHTML = "Nombre: "+resultado.nombre+`<br>`+"Apellido: "+resultado.apellido+"<br>"+"Facturas: "+resultado.facturas;
+            color = "green"
         }
     
         if(resultado.facturas>3 && resultado.facturas<6){
-            document.getElementById("div").style.background = "yellow"
-            document.getElementById("div").innerHTML = "Nombre: "+resultado.nombre+`<br>`+"Apellido: "+resultado.apellido+"<br>"+"Facturas: "+resultado.facturas;;
-        }
+            color = "yellow"
+            }
     
         if(resultado.facturas>=6){
-            document.getElementById("div").style.background = "red"
-            document.getElementById("div").innerHTML = "Nombre: "+resultado.nombre+`<br>`+"Apellido: "+resultado.apellido+"<br>"+"Facturas: "+resultado.facturas;;
+            color = "red"
         }
+
+        document.getElementById("div").style.background = color;
+        document.getElementById("div").innerHTML = "Nombre: "+resultado.nombre+`<br>`+"Apellido: "+resultado.apellido+"<br>"+"Facturas: "+resultado.facturas;
     }
 }
