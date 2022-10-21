@@ -13,23 +13,28 @@
         return $this->bonificacion;
     }
 
-    function esTitularValido(){
-        $edad = 18;
-        if ($edad >= 18) {
-            $mayor=true;
-        }else{
-            $mayor=false;
-        }
-    }
-
     function mostrar(){
-        $Info = "
+        $info = "
         <h2>Cuenta Joven</h2>
         <hr>
-        Bonificacion: {$this->bonificacion}<br>
+        Se le acreditara una bonificacion del {$this->bonificacion}<br>
+        Total mas bonificacion: $2750<br>
         ";
 
         return $info;
+    }
+
+    function esTitularValido(){
+        $edad = 20;
+        if ($edad >= 18 && $edad <=21) {
+            $mayor="Si";
+        }else{
+            $mayor="No";
+        }
+        $data = "
+        Mayor de edad: $mayor
+        ";
+        return $mayor;
     }
 }
 

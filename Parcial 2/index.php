@@ -6,9 +6,19 @@
     $persona = new Persona('Agustin',22,42801537);
     echo $persona->mostrar();
 
-    $cuenta = new Cuenta('Agustin',100);
+    $cuenta = new Cuenta('Agustin',1000);
     echo $cuenta-> mostrar();
+    echo $cuenta-> ingresar();
+    echo $cuenta-> retirar();
 
-    $cuentaJoven = new CuentaJoven();
-    echo $cuentaJoven-> mostrar();
+    $cuentaJoven = new CuentaJoven('10%');
+    if ($cuentaJoven->esTitularValido() == "Si") {
+        echo $cuentaJoven-> mostrar();
+    }else{
+        echo "
+        <h2>Cuenta Joven</h2>
+        <hr>
+        Sin bonificacion <br>";
+    }
+    echo $cuentaJoven-> esTitularValido();
 ?>

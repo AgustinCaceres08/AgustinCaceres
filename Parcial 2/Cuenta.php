@@ -23,25 +23,33 @@
         }
     
         public function mostrar(){
-            $Info = "
+            $info = "
             <h2>Cuenta</h2>
             <hr>
             Titular: {$this->titular}<br>
             Cantidad: {$this->cantidad}<br><br>
             ";
         
-            return $Info;
+            return $info;
         }
     
         public function ingresar(){
-            if ($cantidad < 0) {
-                return 'Monto negativo';
-            }
+           $ingresa = 2000;
+           $data = "Ingreso: $ingresa<br>";
+           return $data;
         }
     
         public function retirar(){
-    
+            $retira = 500;
+            $data2 = "
+            Retiro: $retira <br>
+            --------------------<br>
+            Total: $2500
+            ";
+
+           return $data2;
         }
+
     }
 
 ?>

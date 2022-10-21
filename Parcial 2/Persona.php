@@ -2,12 +2,12 @@
     class Persona{
         public $nombre;
         public $edad;
-        public $DNI;
+        public $dni;
 
-        function __construct($nombre,$edad,$DNI) {
+        function __construct($nombre,$edad,$dni) {
             $this->nombre = $nombre;
             $this->edad = $edad;
-            $this->DNI = $DNI;
+            $this->dni = $dni;
         }
     
         public function setNombre(string $nombre){
@@ -26,23 +26,23 @@
         }
         
         
-        public function setDNI(int $DNI){
-            $this-> DNI = $DNI;
+        public function setDNI(int $dni){
+            $this-> dni = $dni;
         }
         public function getDNI(){
-            return $this->DNI;
+            return $this->dni;
         }
     
         function mostrar(){
-            $Info = "
+            $info = "
             <h2>Persona</h2>
             <hr>
             Nombre: {$this->nombre}<br>
             Edad: {$this->edad}<br>
-            DNI: {$this->DNI}<br><br>
+            DNI: {$this->dni}<br><br>
             ";
     
-            return $Info;
+            return $info;
         }
 
         public function esMayorDeEdad(){
