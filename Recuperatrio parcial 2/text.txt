@@ -1,0 +1,7 @@
+si la persona tiene entre 18 y 25 años debe tener una cuenta joven y se le asignara una tarjeta con un plan junior
+
+si tiene mas de 25 y menos de 45 se le asigna una cuenta comun y una tarjeta con un plan super
+
+si tiene mas de 45 se le asigna una cuenta comun con una tarjeta premium
+
+- tarjeta (junior, super, premium)
